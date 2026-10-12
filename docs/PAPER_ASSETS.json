@@ -1,0 +1,53 @@
+{
+  "source": "Author-provided BMVC_2025___Sync_Paper.zip",
+  "source_sha256": "bc0c0e46f6ed42d93c05c407d03d4d1b70b8a3e47b485c0e3aac94922e450b2a",
+  "paper": "https://bmvc2025.bmva.org/proceedings/903/",
+  "figure_references": {
+    "architecture": "sections/1_Introduction.tex, fig:as_synchformer (Figure 1)",
+    "streaming_example": "figures/ego4d_qual_examples_stream.tex, fig:ego4d_qual_stream (Figure 3)"
+  },
+  "assets": [
+    {
+      "file": "docs/assets/as-synchformer-architecture.png",
+      "source_file": "images/AS_Synchformer.png",
+      "sha256": "03db9e783ab2e9faac4c18c71b8a94537d2cdfaa7e7a96c705c19abe3665a702",
+      "bytes": 3766143,
+      "modified": false
+    },
+    {
+      "file": "docs/assets/streaming-example-frames.jpg",
+      "source_file": "images/as_synchformer_examples/sample_24_frames_16_100pct_q65.jpg",
+      "sha256": "3515bcb6eef34c5afa0b965f7c936ffe6bcbebe9870932442928adaada9e9479",
+      "bytes": 1085016,
+      "modified": false
+    },
+    {
+      "file": "docs/assets/streaming-example-spectrogram.jpg",
+      "source_file": "images/as_synchformer_examples/sample_24_spec_16_100pct_q65.jpg",
+      "sha256": "a45f83e446d2b9df528806e796feecfddc7f811395c2b0aa62943cc1912746fa",
+      "bytes": 1125523,
+      "modified": false
+    },
+    {
+      "file": "docs/assets/streaming-example-window-0.png",
+      "source_file": "images/as_synchformer_examples/sample_24_logits_hist_0.png",
+      "sha256": "cd28e4ba58292a30d978fad92938fbc0eb5f7ec96328cce787835756fc740397",
+      "bytes": 26276,
+      "modified": false
+    },
+    {
+      "file": "docs/assets/streaming-example-windows-0-8.png",
+      "source_file": "images/as_synchformer_examples/sample_24_logits_hist_8.png",
+      "sha256": "3522bf2616bf0195dc7593acb268b8050958ab459af7b83cbfa21027e14595a4",
+      "bytes": 26364,
+      "modified": false
+    },
+    {
+      "file": "docs/assets/streaming-example-windows-0-8-16.png",
+      "source_file": "images/as_synchformer_examples/sample_24_logits_hist_16.png",
+      "sha256": "0b9031d144700d4c2a8564f34211167375229c686d0b36121329163849f0ae57",
+      "bytes": 26184,
+      "modified": false
+    }
+  ]
+}

@@ -18,6 +18,10 @@ Only code, configuration files, small model resources, and inherited documentati
 
 ## Method
 
+![AS-Synchformer architecture: the snapshot head uses video and audio features together with streaming-token history; the streaming head aggregates the resulting tokens.](docs/assets/as-synchformer-architecture.png)
+
+*Figure 1 from the author-provided BMVC paper source. The snapshot module predicts offsets and emits multiple streaming tokens conditioned on prior history. The streaming module combines token history for longer-context predictions. Both heads use three-layer, 768-dimensional Transformer encoders.*
+
 AS-Synchformer builds on [Synchformer](https://github.com/v-iashin/Synchformer) and streaming principles from [StreamSync](https://github.com/jvoas655/StreamSync). The paper introduces:
 
 - Multiple streaming tokens per snapshot window, with token selection conditioned on prior history.
@@ -26,6 +30,20 @@ AS-Synchformer builds on [Synchformer](https://github.com/v-iashin/Synchformer) 
 - End-to-end adaptation of the audio and visual encoders to Ego4D.
 
 The recovered AS configuration uses eight streaming tokens, three-layer 768-dimensional synchronization and streaming heads, and 21 offset classes spanning −2 to +2 seconds in 0.2-second increments. The paper's training schedule and final checkpoint mapping still require verification against the archived runs.
+
+## Streaming example from the paper
+
+This example reproduces the supplied assets for Figure 3. Video frames and the audio spectrogram show one input window; the prediction distributions below show how adding temporal context changes the estimated offset. These are saved paper examples, not new inference results from this recovered checkout.
+
+![Video frames from the paper's streaming example.](docs/assets/streaming-example-frames.jpg)
+
+![Audio spectrogram from the same example.](docs/assets/streaming-example-spectrogram.jpg)
+
+| Window 0 | Windows 0 + 8 | Windows 0 + 8 + 16 |
+|---|---|---|
+| ![Offset prediction using window 0.](docs/assets/streaming-example-window-0.png) | ![Offset prediction using windows 0 and 8.](docs/assets/streaming-example-windows-0-8.png) | ![Offset prediction using windows 0, 8, and 16.](docs/assets/streaming-example-windows-0-8-16.png) |
+
+*Figure 3 assets from the author-provided paper source. The illustrated windows are 2.56 seconds apart; the center offset class represents zero offset. Green/red identify the ground-truth class when the prediction is correct/incorrect, respectively.*
 
 ## Code map
 
@@ -111,3 +129,5 @@ Please also credit the inherited Synchformer implementation and StreamSync when 
 ## License and acknowledgements
 
 The inherited MIT [LICENSE](LICENSE), including Vladimir Iashin's copyright notice, is retained. Synchformer, AST, Motionformer, and vendored OpenCLIP components retain their source notices. Source-media and pretrained-weight permissions are separate from this code license. The paper acknowledges support from Amazon Prime Video through the UT Austin Amazon Science Hub.
+
+The architecture and qualitative example assets are reproduced unchanged from the author-provided BMVC paper archive. [docs/PAPER_ASSETS.json](docs/PAPER_ASSETS.json) records their original filenames, paper figure references, and SHA-256 hashes. The inherited code license does not establish a separate license for paper illustrations or the Ego4D imagery within them.

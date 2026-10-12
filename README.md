@@ -2,19 +2,19 @@
 
 **Audio–visual synchronization for egocentric video with sparse synchronization events.**
 
-Code recovery and release preparation for [Toward Robust Audio-Visual Synchronization Detection in Egocentric Video with Sparse Synchronization Events](https://bmvc2025.bmva.org/proceedings/903/), **BMVC 2025**.
+Research code accompanying [Toward Robust Audio-Visual Synchronization Detection in Egocentric Video with Sparse Synchronization Events](https://bmvc2025.bmva.org/proceedings/903/), **BMVC 2025**.
 
 Jordan Voas, Wei-Cheng Tseng, Benoit Vallade, Alex Mackin, David Higham, and David Harwath.
 
 [Paper](https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_903/paper.pdf) · [Project page](https://jvoas655.github.io/avsync-ego4d.github.io/) · [Public repository](https://github.com/jvoas655/AS-Synchformer) · [StreamSync](https://github.com/jvoas655/StreamSync) · [RealSync](https://github.com/jvoas655/RealSync)
 
-## Review status
+## Release status
 
-This private repository preserves recovered research code for review before a public code release. The existing public AS-Synchformer repository currently contains only a placeholder README.
+This release preserves the research code snapshot saved with training run `25-04-26T18-42-37`, together with paper figures and documentation. The recovered model and training code retain their original source bytes.
 
-The `main` branch contains the code snapshot saved with training run `25-04-26T18-42-37`. The `recovered/working-copy` branch contains the separate server working copy. The model, training loop, and data loader differ between those versions; neither has yet been certified as the exact version that produced the final paper tables. Both retain their source code unchanged.
+The snapshot has not yet been certified as the exact version that produced the final paper tables. Environment setup, data preparation, checkpoint identification, and runtime validation remain in progress; the commands below describe the historical entry points.
 
-Only code, configuration files, small model resources, and inherited documentation are included. Original videos, dataset manifests, training logs, and checkpoints remain on the server. No original server files were changed or removed.
+The repository includes code, configurations, small model resources, inherited documentation, and selected paper illustrations. Source videos, dataset manifests, training logs, and checkpoints remain on the server. No original server files were changed or removed.
 
 ## Method
 
@@ -86,7 +86,7 @@ The BMVC experiments use **Ego4D**. Researchers must obtain that dataset through
 
 Candidate AS-Synchformer checkpoint files were found with the archived training run. They have not yet been loaded, matched to the paper's final results, or published. The inherited checkpoint registry and examples refer to upstream models and should not be presented as trained AS-Synchformer weights.
 
-## Work remaining before public release
+## Reproduction work remaining
 
 - Identify the canonical code version and associate checkpoints with the paper's model variants and training stages.
 - Check the data split/evaluation protocol, including differences between the archived loader and the later working copy.

@@ -1,0 +1,679 @@
+{
+  "snapshot": "archived-training-run-25-04-26T18-42-37",
+  "code_modified": false,
+  "files": [
+    {
+      "path": "model/encoders.py",
+      "bytes": 1348,
+      "sha256": "0bdf93b74d4d74c476f3970800e7a5ded1dfe79d7245be33671581cabd856426"
+    },
+    {
+      "path": "model/model_utils.py",
+      "bytes": 19076,
+      "sha256": "766ed43817b38b3e8717d49ad6b473134bb40ae5f3453756ed0bf3fbd99590bc"
+    },
+    {
+      "path": "model/modules/bridges.py",
+      "bytes": 5689,
+      "sha256": "941600144bce69f8dcdc309b794585be67e034386cbc6ad9f0168243d3f8dfec"
+    },
+    {
+      "path": "model/modules/feat_extractors/audio/ast.py",
+      "bytes": 15627,
+      "sha256": "62aa64e7c0370f1de5f256badd5a71a748d2b2f31df6061a308cb823a248fa7e"
+    },
+    {
+      "path": "model/modules/feat_extractors/audio/hf_src/modeling_ast.py",
+      "bytes": 28462,
+      "sha256": "4d457f128fa6973ac65b9f03ad64239c9ca95b349caff28911417645bfab3a69"
+    },
+    {
+      "path": "model/modules/feat_extractors/audio/resnet.py",
+      "bytes": 11462,
+      "sha256": "30b998242aaa1ddcf98f6e8e654d1d57f9c2fe6b8cda8a823e7dff7376bf3c41"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/__init__.py",
+      "bytes": 124,
+      "sha256": "13e158223b3f1d5fa3ce1a0fccb646a70354a055c1e21e007233e5798e9fede2"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/__init__.py",
+      "bytes": 934,
+      "sha256": "9675428e9ef88195d3262b5fde7e48c3844b94d40fa67c88633c6605df294d3e"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/bpe_simple_vocab_16e6.txt.gz",
+      "bytes": 1356917,
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/coca_model.py",
+      "bytes": 17439,
+      "sha256": "63762d49bd7b67518d9c9fb0a96f69e3bd2f7cc536e514d9372683a61311d07b"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/constants.py",
+      "bytes": 116,
+      "sha256": "4289fac298908e2fb814ff84b4594ff49094a7eab074fed1b2ca6429339e923b"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/factory.py",
+      "bytes": 6297,
+      "sha256": "da97fe5dab64881d54f7de01e4a1833a40df5ed782b01512570f6ac049c6265a"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/generation_utils.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/hf_configs.py",
+      "bytes": 1675,
+      "sha256": "706c17fe0f02298a03a03f21c7ccf19b8d5408e6da4dd517f804090774c02100"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/hf_model.py",
+      "bytes": 6298,
+      "sha256": "a322c444d3fb614d45b2b30ef544290503b531d3b5f6d5d148601a54361c382f"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/loss.py",
+      "bytes": 8706,
+      "sha256": "b9270a918c345636d3279d5ae2c1753d8c08158254dc1b69d1c2ad347e90c2f0"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model.py",
+      "bytes": 41420,
+      "sha256": "217cf4cf9c552823cb572e57143763494d37f335f6bfc8b1e2a4ec87e40533eb"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/RN101-quickgelu.json",
+      "bytes": 388,
+      "sha256": "24dd435eec6871d7675bd6b02098e71e105a957aa6a3a59153b03181103756b5"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/RN101.json",
+      "bytes": 364,
+      "sha256": "0466aae72c1cd259a8655e25af3170d54acb4cbac95304cb9832d68e0716538b"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/RN50-quickgelu.json",
+      "bytes": 389,
+      "sha256": "079e9c4f3d7808a767de08061ab417f98d9e8aaaecec6510949cad0c0c389a41"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/RN50.json",
+      "bytes": 364,
+      "sha256": "a5b9845a44b5a052fb1697055b41b492171aa84868f1408e5fed7e6077d046d4"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/RN50x16.json",
+      "bytes": 365,
+      "sha256": "971064787fdc0266bb51d924db6f7f5311763118733315b54f2a9e52bdb64d50"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/RN50x4.json",
+      "bytes": 365,
+      "sha256": "aea39b4ec952ccfe1b7f9242a9c0d36e1abeb90f5c6fd4b2cfac6e402462df72"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/RN50x64.json",
+      "bytes": 370,
+      "sha256": "c9547262af1b739ca64766246b12d9b5e51f33c354f2bb1d8fe871dbb2ded3de"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-B-16-plus-240.json",
+      "bytes": 295,
+      "sha256": "09b2a65ea7bf757440b89b52e7a09ff85d556635f0e3a4ca76109e42aac6e351"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-B-16-plus.json",
+      "bytes": 295,
+      "sha256": "8e0c645c9190b34c48c281cbc243e1ed7c3fd3c1ee5f2c5885fe9c17b11c327a"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-B-16.json",
+      "bytes": 294,
+      "sha256": "66d48767ab11591f4af2d2d1bf21845c3f2bea17ac70e0989991ff166a53ae52"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-B-32-plus-256.json",
+      "bytes": 295,
+      "sha256": "fcb771914c59371ec222f05dd5af44a5da74c72855c1c686f3f9701c95d64732"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-B-32-quickgelu.json",
+      "bytes": 318,
+      "sha256": "437dc6acc8455267c2646e84f880a026d91ac20828db9b100b18a5edba0e767a"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-B-32.json",
+      "bytes": 294,
+      "sha256": "743f4fcee3aea1705c1865f89a3767d816513769f57eb483a9eea3e610ebe633"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-H-14.json",
+      "bytes": 324,
+      "sha256": "8b5bd11e1775f0fd79227ba05c07f3339b1c4da2e0f21f5426631774a84a6058"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-H-16.json",
+      "bytes": 324,
+      "sha256": "45c950e8c98300b5e0085781e9f91cc6f12ff94b43d0ed0f9687ed993209e8ef"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-L-14-280.json",
+      "bytes": 296,
+      "sha256": "848f42db24beda55ce044fb82cc4ffae34fa3a769184c2187a71e5074df209c1"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-L-14-336.json",
+      "bytes": 296,
+      "sha256": "980d8da26bf11b651426addb113881f24f707589ebecc7b882269e3678b33e84"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-L-14.json",
+      "bytes": 296,
+      "sha256": "616750a927ea8d8b0b8e4ec93179cab3df9e4f1531cb60cc5dd6882cb063888b"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-L-16-320.json",
+      "bytes": 296,
+      "sha256": "e4b766875aa5b1b303db804bb446d4c78213ed34bc089e79297b14287b952331"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-L-16.json",
+      "bytes": 296,
+      "sha256": "eae893277137e6cd4f071265423d135663528018cc13bdbf50709feaa80284fa"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-M-16-alt.json",
+      "bytes": 325,
+      "sha256": "a7888dab87466d26cdd7fe6b1df995c17028ca21b8e6848aa9ff549cd57fdf08"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-M-16.json",
+      "bytes": 294,
+      "sha256": "22852ee6d1e4c977f99b79d837fe226c315f75c16a22f809a16df6a2c1792d49"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-M-32-alt.json",
+      "bytes": 294,
+      "sha256": "a1be2c52a813f752842683c60472712bbe6cf10a8adbeecff94cfe0c9f5ef310"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-M-32.json",
+      "bytes": 294,
+      "sha256": "30b866c3c488a841903f0ce0892224cf6cd88924186a2f1bf5cca90fe3e529ef"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-S-16-alt.json",
+      "bytes": 294,
+      "sha256": "377ff96ac3126125c2d59f71567542ab4563230b1cf94287614dd12df86e78ff"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-S-16.json",
+      "bytes": 294,
+      "sha256": "68a3b267da2d98daa52d6df7f9e7764dfe68b619e2ddcda0ab7a0074d5057beb"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-S-32-alt.json",
+      "bytes": 294,
+      "sha256": "8e60da19a82ea42e7c97102ae551d31497da66dbb11793800875584fcb46c760"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-S-32.json",
+      "bytes": 294,
+      "sha256": "f8eeef14759a63a27686abd7eba45ae45b69f0344c32fbff67c059c8f016da3b"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-bigG-14.json",
+      "bytes": 354,
+      "sha256": "6f5fc4e85739ca3546804e30178f5241b3be2becd8cf52c282b6e90c742a9f30"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-e-14.json",
+      "bytes": 354,
+      "sha256": "27e8d32a1c7727ef84fb4ab2c337b69fcb7aae96243c8bcfb4b4bbaffd2a83d1"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/ViT-g-14.json",
+      "bytes": 353,
+      "sha256": "463160a932f75774ded241d4217eebd172fe7c03c24646530a24b89b20148df5"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/coca_ViT-B-32.json",
+      "bytes": 659,
+      "sha256": "5dc0a9a7803fefb45fadd78ae534839d2adc258efe4b732fdf9c370b49caeee5"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/coca_ViT-L-14.json",
+      "bytes": 664,
+      "sha256": "709768239a6598fe13f19f1ccffd152d503c4c51847ea211f4aefec2158a91f8"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/coca_base.json",
+      "bytes": 669,
+      "sha256": "41ea88529c52700715eba5e90ac0e4edca4453346195d1c305cb71ab7d8c75e0"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/coca_roberta-ViT-B-32.json",
+      "bytes": 517,
+      "sha256": "3173bde2a095e7e67df86e5fcf698cee52663b2caf0fcdad91280b9cdf863c1e"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_base.json",
+      "bytes": 421,
+      "sha256": "aca749568baacbeed4d9e80259440f377023b42744ac26ab2f3a01a0eeea9b84"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_base_w.json",
+      "bytes": 422,
+      "sha256": "3de1efb055e506c05952ef13faef6eedabcd68a001d0f7df2c595541f3c3f66a"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_base_w_320.json",
+      "bytes": 422,
+      "sha256": "37b39ef036e6c949af1d5a2f404e469cc216e2ee73d290d0e3169e326f367e93"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_large.json",
+      "bytes": 423,
+      "sha256": "571e78940760a9f389169da9eda00f32f584bb9814bc507fb79e5051c771c29b"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_large_d.json",
+      "bytes": 420,
+      "sha256": "76a8d687335fb75dc02c10bac5de66f7f687e3ab8b23cf0f372ebf86fb0ce58a"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_large_d_320.json",
+      "bytes": 420,
+      "sha256": "44c8dea391af808d38e16d4ff489e2f498bbfa35a974deb9f7273d8932c56679"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_small.json",
+      "bytes": 422,
+      "sha256": "54c0d8b6168b6a7907e32ff8134ef096aa1b1e2100c815f366b728b7fcedd122"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_tiny.json",
+      "bytes": 422,
+      "sha256": "c919729a818c48f95371c8b52030c96513cf2d38e28a94a098be78da3b345e89"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_xlarge.json",
+      "bytes": 426,
+      "sha256": "320f6ee194db97b3b98511ccd9086f29d65ca69bfe1889686f0b4d3fda4334f2"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_xxlarge.json",
+      "bytes": 427,
+      "sha256": "5017c8577bfe979ebcf227b0d651b783809717a12177905d7ce71254b363108e"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/convnext_xxlarge_320.json",
+      "bytes": 427,
+      "sha256": "ab4f469f9ef8df163259e91f145f0a7b2fec21824fb1c2dfa863cc6ab01b52f4"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/mt5-base-ViT-B-32.json",
+      "bytes": 325,
+      "sha256": "dea1040f8fc5ce097a7ba38454e308b19d002df6f90a17556d48eed94c19a960"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/mt5-xl-ViT-H-14.json",
+      "bytes": 349,
+      "sha256": "356b65e1e31b0e4ee374b3d2f332631b13155b8d62f597a568999292e3e3d6ea"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/roberta-ViT-B-32.json",
+      "bytes": 343,
+      "sha256": "4a6d714252c97037c0f5194159882d1a399146f35483275581acc27c994abe11"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/swin_base_patch4_window7_224.json",
+      "bytes": 380,
+      "sha256": "1cb823b9fab9bd851d81ac0af751ccb7fa9ed1ebb31a16cea29e01ca8c3edd87"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/vit_medium_patch16_gap_256.json",
+      "bytes": 377,
+      "sha256": "50426397fc6e28e205df55b9aadedc49c47e73904229ea588fcef29e0e65a07f"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/vit_relpos_medium_patch16_cls_224.json",
+      "bytes": 384,
+      "sha256": "b0539ae19daff98d4edfabfd711a808e01bc362e23414438dd158ec430dd7b28"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/xlm-roberta-base-ViT-B-32.json",
+      "bytes": 327,
+      "sha256": "f2c3d4542cb4a772fecebeaa29aa4a981c29bf0337f08a50210cc6d4a537266b"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/model_configs/xlm-roberta-large-ViT-H-14.json",
+      "bytes": 357,
+      "sha256": "17fbddd3b56a453f14ed9dff1a2a48abe3425f60686d3cf0531940921f8a9bbe"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/modified_resnet.py",
+      "bytes": 7035,
+      "sha256": "897534d25611fb83520f749cb19e000b7e19bc6d1946072c03e28dc37057d136"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/openai.py",
+      "bytes": 5446,
+      "sha256": "f96a14feff6f6af7625d7ca3ec12f095aeed657b0d7f3953512c1eaadeb999c2"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/pretrained.py",
+      "bytes": 14144,
+      "sha256": "78433ace9a39401b0d94d9cfce75f63e25101f0ab802d266fe9f7bfeda2d93e2"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/push_to_hf_hub.py",
+      "bytes": 7660,
+      "sha256": "b343d65a7b2b1b0d69b14f8ad264966c363f767793b3de85a3d1792b2dc55ba3"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/timm_model.py",
+      "bytes": 5077,
+      "sha256": "a8f57501c7552183a15badd4345c1e4f337a957f72abedbb339dbfcbc5d163f2"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/tokenizer.py",
+      "bytes": 7411,
+      "sha256": "5f55e9e2050feb3168a4fcef881bb13ef142f37a298d288d3da8cbf07f839a14"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/transform.py",
+      "bytes": 4779,
+      "sha256": "41c5cfee01c7e3e2f29c5a3934954298ed3ff3bc73f45a8998427283871c44ba"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/transformer.py",
+      "bytes": 27095,
+      "sha256": "c24774c35819c04ce0ea48bbfacadb812a3a333a92fb01480e9a893772690f55"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/utils.py",
+      "bytes": 2223,
+      "sha256": "459dd691e95325eb7100ae107f81f05a84d5e4fc50f7ef6044a700390dffdeb5"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/open_clip/version.py",
+      "bytes": 23,
+      "sha256": "c6ddb2615ac179aa2763e21289583c06f034cc8aa21d0fb405c9b02075ae123b"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/__init__.py",
+      "bytes": 38,
+      "sha256": "3e3bbaa7c0bc48841ea3b80de1aedd15399b9b07a7b08547171845786c274be9"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/data.py",
+      "bytes": 21264,
+      "sha256": "a7ac92f6cf550a64ea7527e611d91535b8cf774ad584813ce05a2f75deacc5c3"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/distributed.py",
+      "bytes": 3801,
+      "sha256": "87234c7de2c00d3e84b9653976b90c84f98b127ded78ecb4329e516288d6f547"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/file_utils.py",
+      "bytes": 2686,
+      "sha256": "37b9e166605feefa8de5b8d2b0032ccae8708b5edfa54d82353dafc78bf1b4aa"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/imagenet_zeroshot_data.py",
+      "bytes": 22079,
+      "sha256": "e64b90a99839ca0592d249a0b374e7b27810a3aa92dec0dbe6ba99d9598947be"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/logger.py",
+      "bytes": 1054,
+      "sha256": "a0c1c10c2938756319c058897d5b240d84107136707551890d90a05514a21974"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/params.py",
+      "bytes": 14256,
+      "sha256": "e313bfdcbaf1a1ca47cdd81ec30c3baa7590fdcbd17916e0ce35839a6f22ec03"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/precision.py",
+      "bytes": 383,
+      "sha256": "29c7d1b5c749a22d4dec9c73c8b0ed8281fb0ff983458ea9c279685ea97dc765"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/profile.py",
+      "bytes": 5289,
+      "sha256": "78311933d2c1d935387ca93a774c63012597a58b13f554b4ef9a00574aee1136"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/scheduler.py",
+      "bytes": 1747,
+      "sha256": "53c48109f8a2c4edda0e417bbe4a9257242826d47f6edf7d4bf16b4381789a05"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/train.py",
+      "bytes": 30064,
+      "sha256": "022d497e76072afa5f2b96380a646c1c41b4c59174ac04320e324a4600542966"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/train_clip.py",
+      "bytes": 22179,
+      "sha256": "70f39040cf92a45a4e3e4067dd0e6f6069c4e2852381435d41fcec0322015e0c"
+    },
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/zero_shot.py",
+      "bytes": 3466,
+      "sha256": "c85913a2db644149d132ff24702b97f73376fee9051f1cfa6a1770d5db36ed73"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/__init__.py",
+      "bytes": 77,
+      "sha256": "4fc0b7521d4d01cad8ca0f81f320bb09e9df87086634c082823e2831f3278cab"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer.py",
+      "bytes": 22055,
+      "sha256": "80af7123b22455644150642d176bd0dc85832e407ea504cbf1d75a11c402e967"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer_src/divided_224_16x4.yaml",
+      "bytes": 1780,
+      "sha256": "80461bd19c1f7bc1213445eba48aa69554e4b0230c57d3acc80625d2e2519dce"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer_src/joint_224_16x4.yaml",
+      "bytes": 1779,
+      "sha256": "6f86dc82fcabfc6e0ab1b769eb8a65a3a9f2be4d322d2aad1c459d2b77a2b94a"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer_src/motionformer_224_16x4.yaml",
+      "bytes": 1783,
+      "sha256": "995529905ae4821b99a9ce98ef2deade350c17df3d5abfdea78617bee5feaa73"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer_src/nystrom_helper.py",
+      "bytes": 5098,
+      "sha256": "904347991abedaa4f46aa19b16f66fb5c8f8f3a488ad4a536f7729e1157089f2"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer_src/orthoformer_helper.py",
+      "bytes": 5217,
+      "sha256": "5101965bdbff3d6997322e406ecd8c69dba614a03b99da0657698a449466514a"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer_src/performer_helper.py",
+      "bytes": 12508,
+      "sha256": "4a89c020b1ee498b6aa642d554dc4204463c5aedd5f08c18af4dda8670dd9f7a"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer_src/video_model_builder.py",
+      "bytes": 13057,
+      "sha256": "c5a3ba87f7750cdd5c4f1de30333c8f7ea4a154ac60c1ef0e9d2fda310ef0f49"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/motionformer_src/vit_helper.py",
+      "bytes": 22520,
+      "sha256": "e048547bbc969d27722a3761e671b9bfa4917d947c983fc804f03e46c5fb5c81"
+    },
+    {
+      "path": "model/modules/feat_extractors/visual/s3d.py",
+      "bytes": 18543,
+      "sha256": "e417a1121a6db006e1b94e5285ff8bb31eccecf81b2957dd2097d9f92f986919"
+    },
+    {
+      "path": "model/modules/transformer.py",
+      "bytes": 17249,
+      "sha256": "d63abcf5f7f734b6398ea96dbb8977d216254ec376e97b81afa7cb1e856aba0e"
+    },
+    {
+      "path": "model/sync_model.py",
+      "bytes": 38830,
+      "sha256": "cdd5ccde9b35326ef52778303e382f7ff2566d6ab2b85af3af3f087df1ff4d5e"
+    },
+    {
+      "path": "configs/stream_synchformer.yaml",
+      "bytes": 13647,
+      "sha256": "d3e4b45f0c315cb207889b6e9b417f25450a40430ddf522bb8c565c9c45e10e2"
+    },
+    {
+      "path": "configs/stream_synchformer_v2.yaml",
+      "bytes": 13657,
+      "sha256": "cfa1a0e64d076fda6866071127f694ea627175a5ffc7f37ddfafb138df3920cb"
+    },
+    {
+      "path": "configs/sync.yaml",
+      "bytes": 13549,
+      "sha256": "e20caabaedfdc7041f637e53716365725df637b7b0abea01dccbc564a790347f"
+    },
+    {
+      "path": "dataset/dataset_utils.py",
+      "bytes": 6366,
+      "sha256": "855ed2fc3fed47f379a4895b7d2f2598d25f7dff0df23b8ab8b6d0d697d99dbd"
+    },
+    {
+      "path": "dataset/ego_4d.py",
+      "bytes": 7101,
+      "sha256": "2d26a84b4bea078ba2fd8c07ada501aa5a8e30a32495cc4b8b6b788ab2315571"
+    },
+    {
+      "path": "dataset/sports_and_news.py",
+      "bytes": 4311,
+      "sha256": "3095e1ef8d5f4a2b191dd72d006ede0579fa1e489febed240a6f3fec3665b049"
+    },
+    {
+      "path": "dataset/transforms.py",
+      "bytes": 47951,
+      "sha256": "e601c3e1f7f67c1b990e71516140ce0172b4e3e884fbee4a9ff9bfa818df6ddc"
+    },
+    {
+      "path": "scripts/check_and_combine_optical_flows.py",
+      "bytes": 7166,
+      "sha256": "9f57987ee92df4fe1f6c99d48bf502f8bba1f848d9b10a36e4fb618554d9d2ad"
+    },
+    {
+      "path": "scripts/compute_decomposition.py",
+      "bytes": 7037,
+      "sha256": "85eb27fc83b3760cba45c43ef54657f66403f7218b8e4da827ae087e561d7b47"
+    },
+    {
+      "path": "scripts/filter_videos.py",
+      "bytes": 6017,
+      "sha256": "98b5f2c67917aaf9c01bba01b2cc14fd5f4458c14d19b1ca5e66d9fd94ba98f3"
+    },
+    {
+      "path": "scripts/interactive_run.sh",
+      "bytes": 4477,
+      "sha256": "6d44af2aac095acafba07d53971f61bdf4d15e9945391224f0cf0cc5e7a06ea1"
+    },
+    {
+      "path": "scripts/preprocess_optical_flows.py",
+      "bytes": 22925,
+      "sha256": "1cd68dbae04f8f7d99c8324a74c9d01e2db9451966a241df4e6ee30c5d04310a"
+    },
+    {
+      "path": "scripts/sbatch_train_sync.sh",
+      "bytes": 6870,
+      "sha256": "13a72409ab80cdfdcfed9bc6e02132da9ceb39bdb9a5c18c048eb856a2829be8"
+    },
+    {
+      "path": "scripts/torchrun_aws_interactive_run.sh",
+      "bytes": 3505,
+      "sha256": "e3678df94634bb8cc37de754a241c67826274fc28bef8ac22574af73e573184d"
+    },
+    {
+      "path": "scripts/train_sync.py",
+      "bytes": 23408,
+      "sha256": "2bc443e296fbd0f24bcd2f117bee7c26d2ab5c3a6965a833cf4e68cf76c21c85"
+    },
+    {
+      "path": "scripts/train_utils.py",
+      "bytes": 48560,
+      "sha256": "50147c1f8cb12ace55e6444f445a792d5748bb36971aa350d1a09104079ff954"
+    },
+    {
+      "path": "utils/logger.py",
+      "bytes": 13474,
+      "sha256": "b88636b384de352be8fcbaeba7dfa45f6fcd09b9652494a368b4052d1ed129b6"
+    },
+    {
+      "path": "utils/utils.py",
+      "bytes": 11524,
+      "sha256": "bd4c368bf7e6df772d2d8c10c41e1f92f6a756ab5b983b674fa3300b11f8829a"
+    },
+    {
+      "path": "_repo_assets/main.png",
+      "bytes": 158158,
+      "sha256": "1a555dd39cc827b0b15082f5eed54e2ebd44ae158be2cdd9029c72aa9a979227"
+    },
+    {
+      "path": "_repo_assets/vis_sim.png",
+      "bytes": 77948,
+      "sha256": "2c7c003705e39002144a2402574273cc2c340714974fff6ab5c99485301d316e"
+    },
+    {
+      "path": "main.py",
+      "bytes": 1606,
+      "sha256": "439c0e63a9bf3010b8772dc31b5eb134d001a724ef9e1455f0e2249828aac5f3"
+    },
+    {
+      "path": "example.py",
+      "bytes": 8309,
+      "sha256": "22f876b4c971630a26b3c134d14d51f3b9800859a64ea5467e5d725349aa5c5c"
+    },
+    {
+      "path": "conda_env.yml",
+      "bytes": 7609,
+      "sha256": "b7c07e84d2ad44f3b8056b2ddc75b6a176082aea9f52070663106b17e46bf925"
+    },
+    {
+      "path": "conda_env_for_AMD_ROCm.yml",
+      "bytes": 6442,
+      "sha256": "bcf18b9d2caf11527c0a3b19987f04b4d44112953078627512938e7d8f1f49f2"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "sha256": "768c302e92c9c1b9c829b73f83101edbe312ca6ed3abc2e8cc9d2eb3e4b185b2"
+    }
+  ],
+  "excluded_assets": [
+    {
+      "path": "model/modules/feat_extractors/train_clip_src/training/.gitignore",
+      "bytes": 6
+    }
+  ],
+  "excluded_trees": [
+    "data",
+    "logs",
+    "__pycache__"
+  ],
+  "source_media_included": false,
+  "checkpoints_included": false
+}
